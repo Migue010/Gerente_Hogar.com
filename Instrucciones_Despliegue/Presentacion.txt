@@ -1,0 +1,24 @@
+NOMBRES DE LOS INTEGRANTES DEL EQUIPO (GERENTE DE HOGAR):
+
+- Juan David Jiménez Jiménez ID: 932024
+- Miguel Ángel Blanco Martinez ID: 934603
+- Simón Pinzón Algarra ID: 938508
+
+
+INSTRUCCIONES DE DESPLIEGUE:
+
+1.  **Descomprimir el Proyecto:**
+    * Descomprimir el archivo `GERENTE_HOGAR.zip`. La carpeta principal se llama GERENTE_HOGAR
+
+2.  **Base de Datos (BD):**
+    * Cree una **nueva BD** con el nombre exacto: **`gerente_hogar`**.
+    * Seleccione esa BD y vaya a la pestaña "**Importar**".
+    * Busque y suba el archivo **`gerente_hogar.sql`** (ubicado dentro de la carpeta `GERENTE_HOGAR (Instrucciones_Despliegue)`).
+    * **Nota:** La BD fue desarrollada con MySQL en puerto **3307**.
+
+3.  **Conexión PHP:**
+    * Revisar el archivo **`conexion.php`** (dentro de la carpeta `GERENTE_HOGAR`) para asegurar que las credenciales (`$servername`, `$username`, `$password`, `$dbname`) coincidan con su configuración local.
+
+4.  **Acceder al Sitio:**
+    * Abra su navegador y vaya a: **`http://localhost/GERENTE_HOGAR/gerente_hogar.html`**
+    * De esta forma se abrirá el panel principal para empezar a navegar su funcionamiento.

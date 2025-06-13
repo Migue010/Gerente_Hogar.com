@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.encabezado {
+    background: #084f4a;
+    color: yellowgreen;
+    font-weight: bold;
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezado nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.encabezado nav a {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.seccion-principal {
+    padding: 4.5rem;
+    background-image: url(../Archivos_ADICIONALES/fondo_general.avif);
+    position: relative;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.seccion-principal h1 {
+    font-size: 2.5rem;
+}
+
+.seccion-principal .boton {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background: #084f4a;
+    color: yellowgreen;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.seccion-caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    background: #fff;
+    color: white;
+}
+
+.tarjeta-caracteristica {
+    background-color: #084f4a;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.tarjeta-caracteristica a {
+    display: block;
+    margin-top: 0.5rem;
+    color: yellowgreen;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.asesoramiento {
+    padding: 2rem;
+    background: #a5e8e4;
+    text-align: center;
+}
+
+.asesoramiento .boton {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.0rem;
+    background: #084f4a;
+    color: yellowgreen;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.info-extra {
+    padding: 0;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.novedades-grid {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) repeat(3, minmax(250px, 1fr));
+    gap: 1.5rem;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 100%;
+}
+
+.novedades-grid .titulo-seccion {
+    background-color: #084f4a;
+    color: yellowgreen;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 1 / span 1;
+    grid-column: 1 / 2;
+}
+
+.tarjeta-novedad {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #e0e0e0;
+    grid-column: auto;
+    flex: 1;
+    min-width: 250px;
+}
+
+.tarjeta-novedad:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta-novedad .icono {
+    font-size: 2.5rem;
+    color: #084f4a;
+    margin-bottom: 1rem;
+    background-color: #e6f0ff;
+    padding: 0.8rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+}
+
+.tarjeta-novedad h4 {
+    font-weight: bold;
+    color: #084f4a;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.tarjeta-novedad ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tarjeta-novedad ul li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.seccion-quienes-somos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    background: #fff;
+}
+
+.seccion-quienes-somos p {
+    text-align: justify;
+}
+
+.seccion-quienes-somos h1 {
+    background-color: #084f4a;
+    color: yellowgreen;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+}
+
+.seccion-contacto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+}
+
+.seccion-contacto h3 {
+    color: yellowgreen;
+    background-color: #084f4a;
+    text-align: center;
+}
+
+.seccion-contacto p {
+    text-align: center;
+}
+
+.app {
+    background: #e6f0ff;
+    text-align: center;
+    padding: 2rem;
+}
+
+.pie {
+    background: #084f4a;
+    color: yellowgreen;
+    font-weight: bold;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pie a {
+    color: yellowgreen;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .novedades-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        padding: 1.5rem;
+    }
+
+    .novedades-grid .titulo-seccion {
+        grid-column: 1 / -1;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .encabezado {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .seccion-principal h1 {
+        font-size: 2rem;
+    }
+
+    .seccion-caracteristicas {
+        grid-template-columns: 1fr;
+    }
+
+    .novedades-grid {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+
+    .novedades-grid .titulo-seccion {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+
+    .info-extra {
+        padding: 0;
+    }
+
+    .pie {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .seccion-principal h1 {
+        font-size: 1.5rem;
+    }
+
+    .seccion-principal .boton {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+

@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../Archivos_ADICIONALES/fondo_general.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background: #084f4a;
+    color: yellowgreen;
+    font-weight: bold;
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+header nav a {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.hero {
+    padding: 2rem;
+    text-align: center;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 2rem auto 4rem;
+    background-color: rgba(8, 79, 74, 0.85);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000a;
+}
+
+form label,
+form input,
+form select {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: yellowgreen;
+}
+
+form input,
+form select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+form button {
+    background-color: yellowgreen;
+    border: none;
+    color: #084f4a;
+    font-weight: bold;
+    padding: 0.7rem;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+footer {
+    background: #084f4a;
+    color: yellowgreen;
+    font-weight: bold;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer a {
+    color: yellowgreen;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
